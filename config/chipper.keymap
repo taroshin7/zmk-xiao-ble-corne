@@ -35,13 +35,13 @@
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |   SHFT       |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    |   NAV    |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                                   |  LALT  |   SPC   |  LOWER  |       |  BSPC |   RET   |  RAISE  |
+//                                   |  LALT  |  LOWER  |   SPC   |       |  BSPC |   RET   |  RAISE  |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                   bindings = <
         &kp ESC        &kp Q    &kp W    &kp E    &kp R     &kp T          &kp Y    &kp U      &kp I     &kp O     &kp P      &kp BKSP
         &kp TAB    &mt LSFT A   &kp S    &kp D    &kp F     &kp G          &kp H   &mt LCTL J  &kp K     &kp L    &mt RSHFT SCLN   &kp QUOT
         &kp LSFT       &kp Z    &kp X    &kp C    &kp V     &kp B          &kp N     &kp M     &kp CMMA  &kp DOT   &kp FSLH   &mo NAVI
-                                &kp LALT  &mt LSFT SPC  &mo LOWER          &kp BSPC  &mt RCTRL RET  &mo RAISE
+                                &kp LALT  &mo LOWER  &mt LSFT SPC          &kp BSPC  &mt RCTRL RET  &mo RAISE
                             >;
 
                   label = "Jing";
@@ -55,7 +55,7 @@
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |              |   Tab   |   ←    |    ↑   |    →  　|    [    |    |   ]   |    ?    |    !    |    @    |  PrtScn  |          |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |              | ESC    | LA(GRAVE) |  ↓   |   F7    |    (    |    |   )   |    -    |    ~    |    _   | LA(GRAVE) |          |
+// |              | ESC    | LA(GRAVE) |  ↓   |   F7    |    (    |    |   )   |    -    |    ~    |    _    |  LA(RET) |          |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
 //                                   |        |         |         |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
@@ -63,7 +63,7 @@
                   bindings = <
           &none  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5   &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0  &kp BKSP
           &none   &kp TAB   &kp LEFT   &kp UP   &kp RIGHT   &kp LBKT     &kp RBKT  &kp QMARK  &kp EXCL   &kp AT  &kp PSCRN  &none
-          &none   &kp ESC   &kp LA(GRAVE)  &kp DOWN   &kp F7    &kp LPAR     &kp RPAR  &kp MINUS  &kp TILDE  &kp UNDER   &kp LA(GRAVE)  &none
+          &none   &kp ESC   &kp LA(GRAVE)  &kp DOWN   &kp F7    &kp LPAR     &kp RPAR  &kp MINUS  &kp TILDE  &kp UNDER   &kp LA(RET)  &none
                                        &trans    &trans    &trans        &trans     &mo ADJS     &trans
                             >;
                   label = "NUM";
