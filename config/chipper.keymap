@@ -55,7 +55,7 @@
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |              |   Tab   |   ←    |    ↑   |    →  　|    [    |    |   ]   |    ?    |    !    |    @    |   PrtScn |          |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
-// |              | ESC     |  INT5  |  ↓     |   F7    |    (    |    |   )   |    -    |    ~    |    _    |   INT4   |          |
+// |              | ESC     |  INT2  |  ↓     |   F7    |    (    |    |   )   |    -    |    ~    |    _    |   INT7   |          |
 // '---------------------------------+--------+---------+---------+    |-------+---------+---------+-------------------------------'
 //                                   |        |         |         |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
@@ -63,7 +63,7 @@
                   bindings = <
           &none  &kp NUM_1  &kp NUM_2  &kp NUM_3  &kp NUM_4  &kp NUM_5   &kp NUM_6  &kp NUM_7  &kp NUM_8  &kp NUM_9  &kp NUM_0  &kp BKSP
           &none   &kp TAB   &kp LEFT   &kp UP   &kp RIGHT   &kp LBKT     &kp RBKT  &kp QMARK  &kp EXCL   &kp AT  &kp PSCRN  &none
-          &none   &kp ESC   &kp INT5   &kp DOWN   &kp F7    &kp LPAR     &kp RPAR  &kp MINUS  &kp TILDE  &kp UNDER   &kp INT4  &none
+          &none   &kp ESC   &kp INT2   &kp DOWN   &kp F7    &kp LPAR     &kp RPAR  &kp MINUS  &kp TILDE  &kp UNDER   &kp INT7  &none
                                        &trans    &trans    &trans        &trans     &mo ADJS     &trans
                             >;
                   label = "NUM";
