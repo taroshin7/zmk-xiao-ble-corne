@@ -74,7 +74,7 @@
                 raise_layer {
 // RAISE Layer: Special Chars
 // .--------------------------------------------------------------.    .-----------------------------------------------------------.
-// |              |    !    |    @   |        |         |    |    |    |   _   |    !    |    @    |         |          |          |
+// |       0      |  BT 0   |  BT 1  |  BT 2  |  BT 3   |  BT 4   |    |   _   |    !    |    @    |         |          |          |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
 // |              |    #    |    $   |        |    [    |    (    |    |   )   |    ]    |    ?    |         |          |          |
 // |--------------+---------+--------+--------+---------+---------|    |-------+---------+---------+---------+----------+----------|
@@ -83,7 +83,7 @@
 //                                   |        |         |         |    |       |         |         |
 //                                   '--------+---------+---------'    '-------+---------+---------'
                         bindings = <
-        &none    &kp EXCL   &kp AT    &kp LPAR  &kp RPAR  &kp PIPE     &kp UNDER  &kp EXCL   &kp AT     &none  &none  &none
+   &kp NUM_0   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &kp UNDER  &kp EXCL   &kp AT     &none  &none  &none
         &none    &kp HASH   &kp DLLR  &kp LBKT  &kp LBKT  &kp LPAR     &kp RPAR   &kp RBKT   &kp QMARK  &none  &none  &none
         &none    &kp PRCNT  &kp CARET &kp LBRC  &kp RBRC  &kp TILDE    &kp MINUS  &kp TILDE  &kp COMMA  &none  &none  &none
                                       &trans    &mo ADJS    &trans       &trans     &trans     &trans
